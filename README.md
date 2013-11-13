@@ -1,4 +1,4 @@
 selfRails
 =========
 
-CRUD
+My first rails app.

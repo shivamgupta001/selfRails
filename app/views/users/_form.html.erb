@@ -1,0 +1,6 @@
+<%=form_for(@user) do |f|%>
+<%=hidden_field_tag :param1 , @param1%>
+Name:<%=f.text_field :name%>
+Age: <%=f.text_field :age%>
+<%=f.submit%>
+<%end%>

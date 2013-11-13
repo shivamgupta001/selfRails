@@ -1,0 +1,7 @@
+<h1>Welcome Users</h1>
+<%=form_for(@users) do |f|%>
+Name:<%=f.text_field :name%>
+Age: <%=f.text_field :age%>
+<%=f.submit%>
+<%end%>
+

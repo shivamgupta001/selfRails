@@ -1,0 +1,20 @@
+<h1>Welcome Users</h1>
+
+
+<table>
+  <tr>  
+    <th>Name</th>
+    <th>Address</th>
+    <th>Action</th>
+  </tr>
+<% @users.each do |u|%>
+  <tr>
+    <td><%=u.name %></td>
+    <td><%=u.age%></td>
+    <td><%=link_to :edit,  edit_user_path(u)%>&nbsp<%=link_to :show , user_path(u) %>&nbsp<%=link_to :destroy,user_path(u), :method => :delete, :confirm => "Are you sure"  %></td>
+  </tr>
+<%end%>
+</table>
+<%=link_to :add_user,new_user_path %>
+
+

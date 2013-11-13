@@ -1,0 +1,1 @@
+<%=link_to :edit_record,edit_user_path%>
